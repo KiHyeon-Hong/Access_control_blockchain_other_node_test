@@ -116,7 +116,6 @@ app.get('/reqBlockIntegrity', async (req, res, next) => {
  * 출입키 블록체인 블록 무결성 유지 API
  */
 app.get('/blockIntegrity', (req, res, next) => {
-  console.log('출입키 위변조 복구 요청');
   res.json(blockchain.blockIntegrity());
 });
 
